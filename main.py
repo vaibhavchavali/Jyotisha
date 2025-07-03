@@ -6,7 +6,7 @@ TEST_DATA_PATH = os.path.join(os.path.dirname(__file__), 'computation_systems')
 computation_system = ComputationSystem.read_from_file(
      filename=os.path.join(TEST_DATA_PATH, "vishvAsa_bhAskara.toml"))
 from jyotisha.panchaanga.temporal.time import Date
-city = City('Frisco', "33:09:19", "-96:49:7", "America/Chicago")
+city = City('Frisco',"33:09:19.3428", "-96:49:7.4388", "America/Chicago")
 panchaanga = annual.get_panchaanga_for_civil_year(city=city, year=2025, computation_system=computation_system, allow_precomputed=False)
 
 
