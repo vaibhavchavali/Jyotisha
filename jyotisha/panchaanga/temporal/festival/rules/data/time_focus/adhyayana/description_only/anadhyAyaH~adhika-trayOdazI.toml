@@ -1,0 +1,22 @@
+default_to_none = true
+id = "anadhyAyaH~adhika-trayOdazI"
+shlokas = """
+केचिदाहुः—
+अधिकायां त्रयोदश्यां चतुर्दश्यां दिवा यदि।
+अमावास्या च दृश्येत तदाऽनध्ययनं भवेत्॥
+अत्र त्रयोदशीवृद्ध्या दिनद्वये स्वाध्यायदिनत्वमापन्नाऽधिकेत्युच्यते।
+"""
+references_primary = ["Smriti Muktaphalam SVR p.  160"]
+tags = ["Anadhyayana Days"]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "When a `trayOdazI` is present on two consecutive days, extending beyond 60 ghatikas (`vRddhitithi`), then, one must not perform `adhyayana` on that `trayOdazI`."
+
+[names]
+sa = ["अनध्यायः"]
+

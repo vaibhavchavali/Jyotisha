@@ -1,0 +1,18 @@
+default_to_none = true
+id = "AzA~dazamI"
+tags = [ "LessCommonFestivals", "SpecialPuja",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 4
+anga_type = "tithi"
+anga_number = 10
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Puja of `AzA dEvI (pArvatI)`"
+
+[names]
+sa = [ "आशा-दशमी",]

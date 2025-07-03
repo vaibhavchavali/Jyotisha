@@ -1,0 +1,15 @@
+default_to_none = true
+id = "sthAlIpAkaH_1"
+tags = [ "MonthlyFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+adhika_maasa_handling = "adhika_and_nija"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Observed on Śukla-Prathamā tithi of every (lunar) month (Pūrvāhṇaḥ/puurvaviddha). `sthAlIpakaH` is an important fortnightly ritual, involving the offering of `haviSyAnna` to `agni`, with the offering being cooked on the fire itself."
+
+[names]
+sa = [ "दर्श-स्थालीपाकः",]

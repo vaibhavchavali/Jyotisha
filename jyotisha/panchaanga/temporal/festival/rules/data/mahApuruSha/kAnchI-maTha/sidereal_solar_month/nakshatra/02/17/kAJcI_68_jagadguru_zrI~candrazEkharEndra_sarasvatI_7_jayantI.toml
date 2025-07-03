@@ -1,0 +1,29 @@
+default_to_none = true
+id = "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_jayantI"
+tags = [ "MahapurushaEvents", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """महास्वामीति विख्यातस्त्वष्टषष्टो जगद्गुरुः।
+हारीतेऽन्वय उद्भूत उत्कृष्टे नाम धामनि॥२५॥
+पञ्चोने वर्षसाहस्रपञ्चके विगते कलौ।
+जयवर्षे वृषे मासि मैत्रर्क्षे कृष्णपक्षके॥२६॥
+प्रतिपत्तिथिमध्याह्ने स्वामिनाथेति कीर्तितः।
+महालक्ष्मीसुब्रह्मण्यदम्पत्योस्तपसः फलम्॥२७॥
+—पुण्यश्लोकमञ्जरी
+अपारकरुणासिन्धुं ज्ञानदं शान्तरूपिणम्।
+श्रीचन्द्रशेखरगुरुं प्रणमामि मुदाऽन्वहम्॥
+"""
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 2
+anga_type = "nakshatra"
+anga_number = 17
+kaala = "प्रातः"
+year_start = 4995
+year_start_era = "kali"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "काञ्ची ६८ जगद्गुरु श्री-चन्द्रशेखरेन्द्र सरस्वती ७ जयन्ती",]

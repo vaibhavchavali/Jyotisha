@@ -1,0 +1,16 @@
+default_to_none = true
+id = "lakSmI-indra-kubEra-pUjA"
+tags = [ "SpecialPuja",]
+references_primary = [ "Purushartha Chintamani",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 7
+anga_type = "tithi"
+anga_number = 15
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "लक्ष्मी-इन्द्र-कुबेर-पूजा",]

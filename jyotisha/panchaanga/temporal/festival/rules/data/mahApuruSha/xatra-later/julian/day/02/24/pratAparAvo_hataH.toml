@@ -1,0 +1,17 @@
+id = "pratAparAvo_hataH"
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+month_type = "julian"
+anga_type = "day"
+month_number = 2
+anga_number = 24
+year_start = 1674
+year_start_era = "gregorian"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "pratAparAv gujjar, fine general of shivAjI, died fighting Adil shAhI general Bahlul Khan (as ordered by shivAjI) at Nesari. (To the consternation of Shivaji, Prataprao had released Bahalol Khan along troops and the seized war material, when Bahalol Khan promised not to invade Maratha territories again.) A romantic tale (without evidence) is that pratAprAv rode in heedless after being censured by shivAjI."
+
+[names]
+sa = [ "प्रतापरावो हतः",]

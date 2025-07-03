@@ -1,0 +1,32 @@
+default_to_none = true
+id = "gOvardhana-pUjA"
+tags = [ "PuranaEvents", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """
+गोवर्धन धराधार गोकुलत्राणकारक।
+विष्णुबाहुकृतोच्छ्राय गवां कोटिप्रदो भव॥
+नारदीयपुराणे ११० अध्याये---
+अथोर्जसितपक्षत्यां नवरात्रोदितं चरेत्।
+विशेषादन्नकूटाख्यं विष्णुप्रीतिविवर्धनम्॥३५॥
+सर्वपाकैः सर्ददोहैः सर्वैः सर्वार्थसिद्धये॥
+कर्तव्यमन्नकूटं तु गोवर्द्धनसमर्चने॥३६॥
+सायं गोभिः सह श्रीमद्गोवर्द्धनधराधरम्॥
+समर्च्य दक्षिणीकृत्य भुक्तिमुक्ती समाप्नुयात्॥३७॥
+"""
+references_primary = [ "Naradiya Puranam, Adhyaya 110",]
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "paraviddha"
+month_number = 8
+anga_type = "tithi"
+anga_number = 1
+kaala = "मध्याह्नः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Commemoration of Govardhana Leela of Krishna. Offer naivedyam to Bhagavan Krishna."
+
+[names]
+sa = [ "गोवर्धन-पूजा", "अन्नकूट्",]

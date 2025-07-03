@@ -1,0 +1,15 @@
+default_to_none = true
+id = "kabIradAsa~jayantI"
+tags = [ "MahapurushaEvents",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 3
+anga_type = "tithi"
+anga_number = 15
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "कबीरदास-जयन्ती",]

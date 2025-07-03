@@ -1,0 +1,20 @@
+default_to_none = true
+id = "tiruccendUr_AvaNit_tiruvizhA_nir2aivu"
+tags = [ "TamilnaduTempleFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 5
+anga_type = "nakshatra"
+anga_number = 16
+kaala = "प्रातः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "The Tiruchendur Brahmotsavam of Avani each year is very special. The festival is conducted for twelve days. This marks the final day of the festival."
+
+[names]
+ta = [ "tiruccendUr AvaNit tiruvizhA nir2aivu",]

@@ -1,0 +1,14 @@
+default_to_none = true
+id = "bOdhAyana-kAtyAyana-iSTiH"
+tags = [ "RareDays", "Combinations", "SpecialVratam",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "`iSTiH` is performed on this day by those following the `bOdhAyana/kAtyAyana` `sUtra`s. This difference happens because `candradarzanam` occurs tomorrow, and followers of `bOdhAyana/kAtyAyana` `sUtra`s do not perform `iSTiH` on `candradarzanam` day."
+
+[names]
+sa = [ "बोधायन-कात्यायन-इष्टिः",]

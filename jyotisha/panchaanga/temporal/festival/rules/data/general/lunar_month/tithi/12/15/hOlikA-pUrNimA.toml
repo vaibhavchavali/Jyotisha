@@ -1,0 +1,17 @@
+default_to_none = true
+id = "hOlikA-pUrNimA"
+tags = [ "SpecialPuja", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "paraviddha"
+month_number = 12
+anga_type = "tithi"
+anga_number = 15
+kaala = "प्रदोषः"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "होलिका-पूर्णिमा",]

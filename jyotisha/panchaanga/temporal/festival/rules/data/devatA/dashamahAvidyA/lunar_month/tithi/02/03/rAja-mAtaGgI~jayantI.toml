@@ -1,0 +1,20 @@
+default_to_none = true
+id = "rAja-mAtaGgI~jayantI"
+tags = [ "Dashamahavidya", "LessCommonFestivals",]
+references_secondary = [ "Kielhorn (1897); Ashtanga Panchangam",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 2
+anga_type = "tithi"
+anga_number = 3
+kaala = "अपराह्णः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Devi Raja Matangi is 9th of the Dasha Maha Vidyas."
+
+[names]
+sa = [ "राज-मातङ्गी-जयन्ती",]

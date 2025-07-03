@@ -1,0 +1,20 @@
+default_to_none = true
+id = "mahAkAlI~jayantI"
+tags = [ "Dashamahavidya",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "paraviddha"
+month_number = 6
+anga_type = "tithi"
+anga_number = 23
+kaala = "मध्यरात्रिः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Devi Mahakali is 1st of the Dasha Maha Vidyas."
+
+[names]
+sa = [ "महाकाली-जयन्ती",]

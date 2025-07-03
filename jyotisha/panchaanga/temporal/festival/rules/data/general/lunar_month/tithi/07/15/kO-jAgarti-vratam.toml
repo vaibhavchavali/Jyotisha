@@ -1,0 +1,25 @@
+default_to_none = true
+id = "kO-jAgarti-vratam"
+tags = [ "SpecialVratam", "CommonFestivals",]
+shlokas = """
+निशीथे वरदा लक्ष्मीः को जागर्तीति भाषिणी।
+तस्मै वित्तं प्रयच्छामि अक्षैः क्रीडां करोति यः॥
+"""
+references_primary = [ "Purushartha Chintamani p.302",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 7
+anga_type = "tithi"
+anga_number = 15
+kaala = "निशीथः"
+priority = "paraviddha"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Have to play Aksha kreeda only on this day and Ko-jagarti-Vratam (Lakshmi will ask \"who are awake\"). Vaalakhilya Rishi also mentioned Ko-jagarti Vratam."
+
+[names]
+sa = [ "को-जागर्ति-व्रतम्",]

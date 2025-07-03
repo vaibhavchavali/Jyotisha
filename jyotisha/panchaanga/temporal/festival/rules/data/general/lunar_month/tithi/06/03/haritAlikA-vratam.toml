@@ -1,0 +1,25 @@
+default_to_none = true
+id = "haritAlikA-vratam"
+tags = [ "SpecialVratam",]
+references_primary = [ "Bhavishyottara Puranam",]
+references_secondary = [ "Purushartha Chintamani p. 89",]
+shlokas = """
+भाद्रस्य कजली कृष्णा शुक्ला च हरितालिका।
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+anga_type = "tithi"
+anga_number = 3
+priority = "paraviddha"
+kaala = "प्रातः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Puja of Gauri-Maheshwara on Vrishabham, esp. for girls desirous of getting married, like Devi Parvati sought the hand of Maheshwara, as Himavan's daughter."
+
+[names]
+sa = [ "हरितालिका-व्रतम्",]

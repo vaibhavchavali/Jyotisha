@@ -1,0 +1,24 @@
+default_to_none = true
+id = "gOpASTamI"
+tags = [ "LessCommonFestivals",]
+shlokas = """
+कार्त्तिके  याऽष्टमी  शुक्ला  ज्ञेया  गोपाष्टमी  बुधैः।
+तत्र  कुर्याद्गवां  पूजां  गोग्रासं  गोप्रदक्षिणम्॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "paraviddha" # based on yugmavAkyam
+month_number = 8
+anga_type = "tithi"
+anga_number = 8
+kaala = "मध्याह्नः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Perform `pUjA` of cow with calf, and offer `agattikIrai` and grass/water, and perform 16 `pradakSiNam`."
+
+[names]
+sa = [ "गोपाष्टमी",]

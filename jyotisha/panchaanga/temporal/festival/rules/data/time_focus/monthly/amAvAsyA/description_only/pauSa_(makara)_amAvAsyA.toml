@@ -1,0 +1,14 @@
+default_to_none = true
+id = "pauSa_(makara)_amAvAsyA"
+tags = [ "AmavasyaDays",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "`amAvAsyA` of `pauSa` month, which also coincides with the sidereal solar month of `makara`."
+
+[names]
+sa = [ "पौष (मकर) अमावास्या",]

@@ -1,0 +1,37 @@
+default_to_none = true
+id = "matsya~jayantI"
+shlokas = """
+सत्यव्रतोपदेशाय जिह्ममीनस्वरूपधृक्।
+प्रलयाब्धिकृतावास गृहाणार्घ्यं नमोऽस्तु ते॥
+
+प्रलयपयसि धातुः सुप्तशक्तेर्मुखेभ्यः
+श्रुतिगणमपनीतं प्रत्युपादत्त हत्वा
+दितिजमकथयद्यो ब्रह्म सत्यव्रतानां
+तमहमखिलहेतुं जिह्ममीनं नतोऽस्मि॥६१॥
+---श्रीमद्भागवते महापुराणे पारमहंस्यां संहितायां अष्टमस्कन्धे चतुर्विंशोऽध्यायः
+
+चैत्रे मास्यसिते पक्षे त्रयोदश्यां तिथौ विभुः।
+उदभून्मत्स्यरूपेण रक्षार्थमवनेर्हरिः॥ 
+अवतारदिने पुण्ये हरिमुद्दिश्य भक्तितः।
+उपवासादि यत् किञ्चित्तदानन्त्याय कल्पते॥
+"""
+tags = [ "Dashavataram",]
+references_primary = [ "Vaidyanatha Dikshitiyam (SVR) p.62",]
+references_secondary = [ "Kielhorn (1897)",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "puurvaviddha"
+month_number = 1
+anga_type = "tithi"
+anga_number = 28
+kaala = "अपराह्णः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Matsyavataram happened on this day. On this sacred day, `upavAsa` etc. gives `anantapuNyam`."
+
+[names]
+sa = [ "मत्स्य-जयन्ती",]

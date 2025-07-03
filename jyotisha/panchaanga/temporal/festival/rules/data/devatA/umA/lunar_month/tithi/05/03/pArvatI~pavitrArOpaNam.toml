@@ -1,0 +1,15 @@
+default_to_none = true
+id = "pArvatI~pavitrArOpaNam"
+tags = [ "LessCommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 5
+anga_type = "tithi"
+anga_number = 3
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "पार्वती-पवित्रारोपणम्",]

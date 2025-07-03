@@ -1,0 +1,20 @@
+default_to_none = true
+id = "mahAtArA~jayantI"
+tags = [ "Dashamahavidya",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "puurvaviddha"
+month_number = 1
+anga_type = "tithi"
+anga_number = 4
+kaala = "मध्यरात्रिः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Devi Mahatara is 2nd of the Dasha Maha Vidyas."
+
+[names]
+sa = [ "महातारा-जयन्ती",]

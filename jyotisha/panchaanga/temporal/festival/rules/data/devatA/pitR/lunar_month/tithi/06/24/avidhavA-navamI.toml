@@ -1,0 +1,24 @@
+default_to_none = true
+id = "avidhavA-navamI"
+tags = [ "SpecialPuja", "CommonFestivals",]
+shlokas = """
+भर्तुरग्रे मृता नारी सहदाहेन वा मृता।
+तस्याः स्थाने नियुञ्जीत विप्रैः सह सुवासिनीम्॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+priority = "vyaapti"
+kaala = "अपराह्णः"
+anga_type = "tithi"
+anga_number = 24
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "In honour of Avidhavaas (in the family), by holding a feast for Suvasinis and Kanyas."
+
+[names]
+sa = [ "अविधवा-नवमी",]

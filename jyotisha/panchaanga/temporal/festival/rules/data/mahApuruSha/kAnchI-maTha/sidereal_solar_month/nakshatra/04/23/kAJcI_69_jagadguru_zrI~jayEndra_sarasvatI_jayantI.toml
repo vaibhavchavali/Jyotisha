@@ -1,0 +1,22 @@
+default_to_none = true
+id = "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_jayantI"
+tags = [ "MahapurushaEvents", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """
+देवे देहे च देशे च भक्त्यारोग्य-सुख-प्रदम्।
+बुध-पामर-सेव्यं तं श्री-जयेन्द्रं नमाम्यहम्॥"""
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 4
+anga_type = "nakshatra"
+anga_number = 23
+kaala = "प्रातः"
+year_start = 5036
+year_start_era = "kali"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "काञ्ची ६९ जगद्गुरु श्री-जयेन्द्र सरस्वती जयन्ती",]

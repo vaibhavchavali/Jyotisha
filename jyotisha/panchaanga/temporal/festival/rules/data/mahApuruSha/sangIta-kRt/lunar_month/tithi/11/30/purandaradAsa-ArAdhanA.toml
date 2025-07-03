@@ -1,0 +1,23 @@
+default_to_none = true
+id = "purandaradAsa-ArAdhanA"
+tags = [ "MahapurushaEvents", "CommonFestivals",]
+shlokas = """
+मन्मनोभीष्टवरदं सर्वाभीष्टफलप्रदम्।
+पुरन्दरगुरुं वन्दे दासश्रेष्ठं दयानिधिम्॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 11
+anga_type = "tithi"
+anga_number = 30
+year_start = 4665
+year_start_era = "kali"
+priority = "vyaapti"
+kaala = "अपराह्णः"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "पुरन्दरदास-आराधना",]

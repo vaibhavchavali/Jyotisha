@@ -1,0 +1,21 @@
+default_to_none = true
+id = "zAkavrata-samApanam"
+tags = [ "VratamEnd", "SpecialPeriodEnd", "CommonFestivals",]
+shlokas = """
+वासुदेव नमस्तुभ्यं प्रथमे मासि मत्कृतम्।
+शाकव्रतं मया तेन संतुष्टो भव माधव॥
+इदं व्रतं मया देव कृतं प्रीत्यै तव प्रभो।
+न्यूनं सम्पूर्णतां यातु त्वत्प्रसादाज्जनार्दन॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 5
+anga_type = "tithi"
+anga_number = 12
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "शाकव्रत-समापनम्",]

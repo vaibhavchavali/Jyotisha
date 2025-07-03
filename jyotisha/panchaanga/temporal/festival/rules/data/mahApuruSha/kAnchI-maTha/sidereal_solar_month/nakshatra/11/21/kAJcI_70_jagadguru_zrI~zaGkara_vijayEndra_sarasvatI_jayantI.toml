@@ -1,0 +1,22 @@
+default_to_none = true
+id = "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_jayantI"
+tags = [ "MahapurushaEvents", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """
+नमामः शङ्करान्वाख्य-विजयेन्द्रसरस्वतीम्।
+श्रीगुरुं शिष्टमार्गानुनेतारं सन्मतिप्रदम्॥"""
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 11
+anga_type = "nakshatra"
+anga_number = 21
+kaala = "प्रातः"
+year_start = 5069
+year_start_era = "kali"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "काञ्ची ७० जगद्गुरु श्री-शङ्कर विजयेन्द्र सरस्वती जयन्ती",]

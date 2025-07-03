@@ -1,0 +1,23 @@
+lunar_month_assigner_type = "MULTI_NEW_MOON_SIDEREAL_MONTH_ADHIKA_AMAANTA"
+ayanaamsha_id = "CHITRA_AT_180"
+jsonClass = "ComputationSystem"
+short_id = "चि॰"
+
+[festival_options]
+aparaahna_as_second_half = true
+tropical_month_start = "mAdhava_at_equinox"
+prefer_eight_fold_day_division = true
+julian_handling = "converted to Gregorian"
+fest_repos_excluded_patterns = [ ".*kAnchI.*", ".*mAdhva.*", ".*smArta-misc.*", ".*zRGgErI.*", ".*nAyanmAr.*", ".*sangIta-kRt.*", ".*temples.*"]
+fest_id_patterns_excluded = ["sthAlIpAkaH_\\d+"]
+jsonClass = "FestivalOptions"
+
+[graha_lopa_measures]
+jsonClass = "GrahaLopaMeasures"
+
+[graha_lopa_measures.graha_id_to_lopa_measure]
+jupiter = 11
+venus = 9
+mercury = 13
+mars = 17
+saturn = 15

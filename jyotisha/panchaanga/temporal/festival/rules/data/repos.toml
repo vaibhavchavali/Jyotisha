@@ -1,0 +1,305 @@
+[[data]]
+name = "devatA/gaNapati"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/gaNapati"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/graha"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/graha"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/kaumAra"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/kaumAra"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/lakShmI"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/lakShmI"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/misc-fauna"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/misc-fauna"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/misc-flora"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/misc-flora"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/nadI"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/nadI"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/pitR"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/pitR"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/shaiva"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/shaiva"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/shakti"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/shakti"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/devIparva"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/devIparva"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/dashamahAvidyA"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/dashamahAvidyA"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/umA"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/umA"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "devatA/vaiShNava"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/devatA/vaiShNava"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "gRhya/Apastamba"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/gRhya/Apastamba"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "gRhya/Apastamba_seasonal"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/gRhya/Apastamba_seasonal"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "gRhya/general"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/gRhya/general"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "general"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/general"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/ALvAr"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/ALvAr"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/RShi"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/RShi"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/general-indic-non-tropical"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/general-indic-non-tropical"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/kAnchI-maTha"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/kAnchI-maTha"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/general-indic-tropical"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/general-indic-tropical"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/sci-tech"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/sci-tech"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/zRGgErI-maTha"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/zRGgErI-maTha"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/mAdhva-misc"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/mAdhva-misc"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/nAyanmAr"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/nAyanmAr"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/sangIta-kRt"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/sangIta-kRt"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/smArta-misc"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/smArta-misc"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/vaiShNava-misc"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/vaiShNava-misc"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/xatra"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/xatra"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "mahApuruSha/xatra-later"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/mahApuruSha/xatra-later"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "tamil"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/tamil"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/Andhra"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/Andhra"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/Kerala"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/Kerala"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/North"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/North"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/Odisha"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/Odisha"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/Tamil"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/Tamil"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "temples/venkaTAchala"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/temples/venkaTAchala"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/Eclipses"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/Eclipses"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/amrita-siddhi"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/amrita-siddhi"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/nakta-vrata-yoga"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/nakta-vrata-yoga"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/Rtu/tropical-viSuvAdi"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/Rtu/tropical-viSuvAdi"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/Rtu/tropical-ayanAdi"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/Rtu/tropical-ayanAdi"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/luno-tropical/smArta"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/luno-tropical/smArta"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/misc"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/misc"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/misc_combinations"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/misc_combinations"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/special-tithis"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/special-tithis"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/tithi-vara-combinations"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/tithi-vara-combinations"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/monthly/amAvAsyA"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/monthly/amAvAsyA"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/monthly/dvAdashI"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/monthly/dvAdashI"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/monthly/ekAdashI"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/monthly/ekAdashI"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/monthly/pradoSha"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/monthly/pradoSha"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/nakShatra"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/nakShatra"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/puShkara"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/puShkara"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/sankrAnti"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/sankrAnti"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/yugAdiH"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/yugAdiH"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/kalpAdiH"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/kalpAdiH"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/adhyayana"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/adhyayana"
+jsonClass = "RulesRepo"
+
+[[data]]
+name = "time_focus/manvAdiH"
+base_url = "https://github.com/jyotisham/adyatithi/blob/master/time_focus/manvAdiH"
+jsonClass = "RulesRepo"
+
+# [[data]]
+# name = "private"
+# base_url = "/"
+# jsonClass = "RulesRepo"
+

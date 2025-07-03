@@ -1,0 +1,25 @@
+default_to_none = true
+id = "anadhyAyaH~mahAbharaNI"
+shlokas = """
+हारीतः—
+महानवम्यां द्वादश्यां भरण्यामपि पर्वसु।
+तथाऽऽक्षयतृतीयायां शिष्यान्नाध्यापयेद् द्विजः॥
+तदाह वृद्धगार्ग्यः—
+ऋक्षेषु द्वे हि नक्षत्रे स्वाध्याये परिवर्जयेत्।
+द्वादश्यां श्रवणं भाद्रे भरणी च महालये॥
+"""
+references_primary = [ "Smriti Muktaphalam SVR p.  156",]
+tags = [ "Anadhyayana Days",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+anchor_festival_id = "mahAbharaNI"
+offset = 0
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Anadhyayana on account of `mahAbharaNI`. On the days of Mahanavami, (Shravana, i.e. Bhadrapada) Dvadashi, (Maha)Bharani and Parvas, the Guru must not teach the Shishya (i.e. Anadhyayana day)."
+
+[names]
+sa = [ "अनध्यायः",]

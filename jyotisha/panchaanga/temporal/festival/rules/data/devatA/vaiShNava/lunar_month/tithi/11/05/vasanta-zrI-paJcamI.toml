@@ -1,0 +1,24 @@
+default_to_none = true
+id = "vasanta-zrI-paJcamI"
+tags = [ "SpecialPuja",]
+shlokas = """
+माघमासे नृपश्रेष्ठ शुक्लायां पञ्चमीतिथौ।
+रतिकामौ तु सम्पूज्य कर्तव्यः सुमहोत्सवः॥
+"""
+references_primary = [ "Smriti Kaustubham 479, Purushartha Chintamani",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 11
+anga_type = "tithi"
+anga_number = 5
+kaala = "मध्याह्नः" # पूजाव्रतेषु सर्वत्रमध्याह्नव्यापिनीतिथिः (default)
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Māgha Shukla Panchami is considered as Shri Panchami or Vasanta Panchami.  In Northern Bharat, pūjā of Lakshmi Devi sameta Mahavishnu, Rati Devī sameta Kāma Deva, and Vasanta Deva is performed on this day. A great utsava is done wearing new clothes, playing instruments and singing in Vasanta Raga. Such traditions are recorded in compilations such as Vrata Rāja, Jayasimha Kalpa Druma, Nirnaya Sindhu etc. It is important to pray to Bhagavan to give us the happiness to celebrate life, and the prosperity and physical vigour needed to take Dharma forward including begetting Dharmic progeny."
+
+[names]
+sa = [ "वसन्त-पञ्चमी/श्री-पञ्चमी/मदन-पञ्चमी"]

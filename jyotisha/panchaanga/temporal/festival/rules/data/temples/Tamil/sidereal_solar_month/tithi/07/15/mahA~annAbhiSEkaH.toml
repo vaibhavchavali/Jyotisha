@@ -1,0 +1,17 @@
+default_to_none = true
+id = "mahA~annAbhiSEkaH"
+tags = [ "TamilnaduTempleFestivals", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "puurvaviddha"
+month_number = 7
+anga_type = "tithi"
+anga_number = 15
+kaala = "सूर्यास्तमयः"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "महा-अन्नाभिषेकः",]

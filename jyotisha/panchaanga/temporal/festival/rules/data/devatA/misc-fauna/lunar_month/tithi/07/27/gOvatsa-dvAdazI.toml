@@ -1,0 +1,27 @@
+default_to_none = true
+id = "gOvatsa-dvAdazI"
+tags = [ "SpecialVratam", "CommonFestivals",]
+shlokas = """
+गोक्षीरं गोघृतं चैव दधि तक्रं च वर्जयेत्।
+सुरभि त्वं जगन्मातर्देवि विष्णुपदे स्थिता।
+सर्वदेवमये ग्रासं मया दत्तमिदं ग्रस॥
+सर्वदेवमये देवि सर्वेदेवैश्च सत्कृता।
+मातर्ममाऽभिलाषितं सफलं कुरु नन्दिनि॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "puurvaviddha"
+month_number = 7
+anga_type = "tithi"
+anga_number = 27
+kaala = "प्रदोषः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Avoid cow's milk, ghee, curd and buttermilk on this day. Give grass to cows and pray to them."
+
+[names]
+sa = [ "गोवत्स-द्वादशी", "विशोक-द्वादशी", "पद्मनाभ-द्वादशी",]

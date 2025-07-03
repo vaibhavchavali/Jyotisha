@@ -1,0 +1,24 @@
+id = "shivarAjo_mRtaH"
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+month_type = "julian"
+anga_type = "day"
+month_number = 4
+anga_number = 3
+year_start = 1680
+year_start_era = "gregorian"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = """
+Friday or Saturday, day or hours before hanuman jayanti. Chatrapati died at Raigad. 
+
+## Reactions
+Even Samartha Ramadas is said to have toned down hanuman jayanti celebrations on the next day.
+
+Contemporary muslim chroniclers like Muhammad Saqi Khan and Khafi Khan declared that he will go to hell. Even Cosme da Guarda, his admirer, declared that as a pagan he will go to hell.
+"""
+
+[names]
+sa = [ "शिवराजो मृतः",]

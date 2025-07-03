@@ -1,0 +1,18 @@
+default_to_none = true
+id = "rAmAnuja-janma-nakSatram"
+tags = [ "MahapurushaEvents", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[names]
+ta = [ "rAmAnujar~tirunakSattiram",]
+sa = [ "रामानुज-जन्म-नक्षत्रम्",]
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+month_number = 1
+anga_type = "nakshatra"
+anga_number = 6
+year_start = 4118
+year_start_era = "kali"
+jsonClass = "HinduCalendarEventTiming"

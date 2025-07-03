@@ -1,0 +1,214 @@
+% !Tex program = xelatex
+\documentclass[12pt]{article}
+\usepackage[dvipsnames]{xcolor} 
+\usepackage[paperwidth=135mm,paperheight=180mm,left=4mm,right=4mm,top=8mm,bottom=8mm]{geometry}
+\usepackage[xetex]{graphicx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{pxfonts}
+\usepackage{bbding}
+\usepackage{wasysym} 
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{supertabular}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\cfoot{}
+\usepackage{../templates/listofitems}
+\newcommand{\yearname}{2015}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MOONPHASE CODE 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Credits: http://tex.stackexchange.com/questions/34785/how-to-typeset-moon-phase-symbols (Jake!)
+\usepackage{tikz}
+\usetikzlibrary{calendar,fpu}
+
+\tikzset{
+    moon colour/.style={
+        moon fill/.style={
+            fill=#1
+        }
+    },
+    sky colour/.style={
+        sky draw/.style={
+            draw=#1
+        },
+        sky fill/.style={
+            fill=#1
+        }
+    },
+    southern hemisphere/.style={
+        rotate=180
+    }
+}
+
+\makeatletter
+\pgfcalendardatetojulian{2010-01-15}{\c@pgf@counta} % 2010-01-15 07:11 UTC -- http://aa.usno.navy.mil/cgi-bin/aa_moonphases.pl?year=2010&ZZZ=END
+\def\synodicmonth{29.530588853}
+\newcommand{\moon}[2][]{%
+    \edef\checkfordate{\noexpand\in@{-}{#2}}%
+    \checkfordate%
+    \ifin@%
+        \pgfcalendardatetojulian{#2}{\c@pgf@countb}%
+        \pgfkeys{/pgf/fpu=true,/pgf/fpu/output format=fixed}%
+        \pgfmathsetmacro\dayssincenewmoon{\the\c@pgf@countb-\the\c@pgf@counta-(7/24+11/(24*60))}%
+        \pgfmathsetmacro\lunarage{mod(\dayssincenewmoon,\synodicmonth)}
+        \pgfkeys{/pgf/fpu=false}%%
+    \else%
+        \def\lunarage{#2}%
+    \fi%
+    \pgfmathsetmacro\leftside{ifthenelse(\lunarage<=\synodicmonth/2,cos(360*(\lunarage/\synodicmonth)),1)}%
+    \pgfmathsetmacro\rightside{ifthenelse(\lunarage<=\synodicmonth/2,-1,-cos(360*(\lunarage/\synodicmonth))}%
+    \tikz [moon colour=white,sky colour=black,#1]{
+        \draw [moon fill, sky draw] (0,0) circle [radius=1ex];
+        \draw [sky draw, sky fill] (0,1ex)
+            arc (90:-90:\rightside ex and 1ex)
+            arc (-90:90:\leftside ex and 1ex)
+            -- cycle;
+    }%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END MOONPHASE CODE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setlength{\footskip}{2mm}
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+\setmainfont{siddhanta.ttf}[Path=../fonts/,Script=Devanagari] 
+\setsansfont[Path=../fonts/,Scale=0.95,Numbers=Lining]{AlegreyaSans-Regular.ttf}
+% \newfontfamily\noto[Path=../fonts/, Ligatures=TeX]{NotoSansUI-Regular}
+%%%%%%% Numbers and counters %%%%%%%
+\newcount\num
+\newcount\tempone \newcount\temptwo
+\newcommand{\devanumber}[1]{%
+\num=#1\devanumberrecurse}
+\setlength{\textheight}{150mm}
+\newcommand{\devanumberrecurse}{%
+{\tempone=\num
+%  \showthe\tempone\ %
+\ifnum\num > 0 
+    \divide \num by 10%
+    \temptwo=\num \multiply\temptwo by -10%
+    \devanumberrecurse%
+%   \\stage 2\ %
+%   \showthe\temptwo\ %
+%   temp1=\number\tempone\ %
+%   num=\number\num\ %
+    \advance\tempone by \temptwo%
+    \devadigit
+\fi
+}}
+\newcommand{\devadigit}{%
+\ifcase\tempone०\or१\or२\or३\or४\or५\or६\or७\or८\or९\fi%\number\tempone%
+}
+\newcommand{\eventsep}{~\raisebox{1pt}{\scriptsize$\Diamondblack$} }
+\newcommand{\TO}{\hspace{1pt}\raisebox{1pt}{\footnotesize\RIGHTarrow}\hspace{1pt}}
+\newcommand{\To}{\hspace{1pt}\raisebox{1pt}{\footnotesize\RIGHTarrow}\hspace{1pt}}
+\newcommand{\Too}{\hspace{1pt}\raisebox{1pt}{\footnotesize\RIGHTarrow\hspace{-5pt}\RIGHTarrow}\hspace{1pt}}
+%%%%%%%% Calendar display stuff %%%%%%%%%%%
+\newcommand{\samvatsaraName}{}
+\newcommand{\solarMonthName}{}
+\newcommand{\solarMonthEndTime}{}
+\newcommand{\lunarMonthName}{}
+\newcommand{\lunarRtu}{}
+\newcommand{\solarMonthDate}{}
+\newcommand{\vaaraName}{}
+\newcommand{\rtuName}{}
+\newcommand{\ayanamName}{}
+
+\newcommand{\sunmonth}[9]{%
+\renewcommand{\solarMonthName}{#1}
+\renewcommand{\solarMonthDate}{#2}
+\renewcommand{\solarMonthEndTime}{#3}
+\renewcommand{\lunarMonthName}{#4}
+\renewcommand{\lunarRtu}{#5}
+\renewcommand{\vaaraName}{#6}
+\renewcommand{\samvatsaraName}{#7}
+\renewcommand{\ayanamName}{#8}
+\renewcommand{\rtuName}{#9}
+}
+\newcommand{\tamil}[1]{%
+{\fontspec[Scale=0.8,FakeStretch=0.9,Path=../fonts/]{NotoSansTamil-Regular.ttf} \footnotesize #1}%
+}
+\newcommand{\kalas}[1]{%
+\setsepchar{ }
+\readlist\arg{#1}
+{\small{\mbox{ब्राह्म\,\textsf{\arg[1]}{\scriptsize\RIGHTarrow}\,सङ्गव\,\textsf{\arg[4]}{\scriptsize\RIGHTarrow}\,मध्याह्न\,\textsf{\arg[7]}{\scriptsize\RIGHTarrow}\,अपराह्ण\,\textsf{\arg[8]}{\scriptsize\RIGHTarrow}\,सायाह्न\,\textsf{\arg[9]}{\scriptsize\RIGHTarrow}}\hfill {दिनान्तः{\scriptsize\RIGHTarrow}\textsf{\arg[14]}}}}\\[-1ex]
+{\small{\mbox{प्रातः सन्ध्या \textsf{\arg[2]}{\scriptsize\RIGHTarrow}\textsf{\arg[3]} माध्याह्निक \textsf{\arg[5]}{\scriptsize\RIGHTarrow}\textsf{\arg[6]} 
+सायं \textsf{\arg[10]}{\scriptsize\RIGHTarrow}\textsf{\arg[11]}}\hfill शयन \textsf{\arg[12]}{\scriptsize\RIGHTarrow}\textsf{\arg[13]}}\\[-4.5ex]}
+}
+\newcommand{\sunmoonrsdata}[6]{%
+\mbox{\large\sun{\small\UParrow}{#1}~~\sun{#5}~~\sun{\small\DOWNarrow}{#2}\hspace{1ex}}\hfill
+\mbox{\large\rightmoon{\small\UParrow}{#3}~\rightmoon{\small\DOWNarrow}{#4}}\\
+#6
+ }
+\newcommand{\sunmoonsrdata}[6]{%
+\mbox{\large\sun{\small\UParrow}{#1}~~\sun{#5}~~\sun{\small\DOWNarrow}{#2}\hspace{1ex}}\hfill
+\mbox{\large\rightmoon{\small\DOWNarrow}{#4}~\rightmoon{\small\UParrow}{#3}}\\
+#6
+ }
+\newcommand{\ahorAtram}{अहोरात्रम्}
+\newcommand{\tithi}[2]{\raisebox{-1pt}{\moon[scale=0.8]{#1}}\hspace{2pt}#2}
+\newcommand{\tnykdata}[6]{\large%\fontsize{13pt}{16pt}\selectfont
+{#1}\\%Tithi
+{नक्षत्रम्–#2 (#3)}\\%Nakshatram and Rashi
+{\setstretch{0.55}
+\begin{tabular}{@{}r@{}p{108mm}@{}}
+योगः–&#4\\[2pt]%Yogam
+करणम्–&#5\\%Karanam
+\end{tabular}}\mbox{}\\[3pt]
+\parbox[c][2ex][c]{0.9\linewidth}{\footnotesize #6}%Lagna, if required
+}
+\newcommand{\avamA}{
+    \raisebox{1.5pt}{\fcolorbox{white}{gray!40}{\scriptsize अवमा}}
+}
+\newcommand{\tridina}{
+    \raisebox{1.5pt}{\fcolorbox{white}{gray!40}{\scriptsize त्रिदिनस्पृक्}}
+}
+\renewcommand{\time}[2]{#1 (#2)}
+\newcommand{\anga}[2]{\mbox{#1\To{}\textsf{#2}}}
+\newcommand{\fullanga}[1]{\mbox{#1\To{}\ahorAtram}}
+\newcommand{\fulltithi}[1]{\mbox{#1\To{}\ahorAtram\tridina}}
+\newcommand{\lagna}[2]{\mbox{#1\RIGHTarrow\textsf{#2}}}
+\newcommand{\uanga}[1]{\mbox{#1\Too}}
+\newcommand{\rygdata}[3]{%
+\begin{minipage}{\linewidth}
+\centering
+\rule[-1ex]{0.7\textwidth}{.4pt}
+\small राहु॰~\textsf{#1}~~यम॰~\textsf{#2}~~गुलिक॰~\textsf{#3}%Rahu Yama Gulika
+\end{minipage}
+}
+\newcommand{\prev}[1]{\textcolor{gray}{#1}}
+\newcommand{\caldata}[7]{%
+\clearpage
+\begin{minipage}{\linewidth}
+#3% Calls \sunmonth
+\large% Fixes font size
+{\centering\begin{tabular}{c|c}
+\large \textsf{\yearname} & {\large\samvatsaraName}\\[-1ex]%YYYY
+& {\footnotesize \ayanamName \hspace{6pt} \rtuName}\\[0.2ex]
+\mbox{\sffamily\fontsize{20}{25}\selectfont {\uppercase{#1}}} & \parbox[c][14pt][c]{3cm}{\centering\LARGE\solarMonthName}\\[-4pt]%mmm
+& {\mbox{\small \solarMonthEndTime}}\\[-2pt]
+& {\parbox[c][15pt]{52mm}{\centering\lunarMonthName}}\\[-6pt]
+& {\parbox[c][10pt]{52mm}{\centering\scriptsize(\lunarRtu)}}\\[-5pt]
+\hspace{0.465\linewidth} & \hspace{0.465\linewidth} \\[-6pt]
+\mbox{\sffamily\fontsize{96}{115}\selectfont #2} & \mbox{\fontsize{90}{24}\selectfont \devanumber{\solarMonthDate}}\\[1.6ex]%DD
+\mbox{\sffamily\fontsize{24}{28}\selectfont\uppercase{#7}} & \parbox[c][24pt][t]{1cm}{\centering\LARGE\vaaraName}\\[1.2ex]%Day of the week
+\hline
+\end{tabular}
+}\mbox{}\\[-4pt]
+#4\\[0.5em]%Sun rise, kalas etc
+#5\mbox{}\\[1em]%Tithi, Nakshatram, Varam, Yogam
+% \vspace{\fill}
+{\parbox[b]{0.95\linewidth}{\centering\normalsize\textcolor{RoyalBlue}{#6}}}%Festivals
+\end{minipage}
+}
+
+\addtolength{\headsep}{-3ex}
+\setlength\parindent{0pt}
+\pagestyle{empty}
+\begin{document}

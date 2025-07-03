@@ -1,0 +1,20 @@
+default_to_none = true
+id = "bAbri-mosque-demolition"
+tags = []
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "gregorian"
+month_number = 12
+anga_type = "day"
+anga_number = 6
+year_start = 1992
+year_start_era = "gregorian"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = ""
+
+[names]
+sa = [ "बाबर-राक्षसालय-नाशः",]

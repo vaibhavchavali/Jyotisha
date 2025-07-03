@@ -1,0 +1,23 @@
+default_to_none = true
+id = "bhuvanEzvarI~jayantI"
+tags = [ "Dashamahavidya",]
+shlokas = """
+उद्यदिनद्युतिमिन्दुकिरीटाम् तुङ्गकुचां नयनत्रययुक्ताम्।
+स्मेरमुखीं वरदाङ्कुशपाशाभीतिकराम् प्रभजे भुवनेशीम्॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+anga_type = "tithi"
+anga_number = 12
+kaala = "मध्यरात्रिः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Devi Bhuvaneshwari is 4th of the Dasha Maha Vidyas."
+
+[names]
+sa = [ "भुवनेश्वरी-जयन्ती",]

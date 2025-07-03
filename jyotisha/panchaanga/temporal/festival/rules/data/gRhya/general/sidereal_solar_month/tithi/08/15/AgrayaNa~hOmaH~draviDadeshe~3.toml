@@ -1,0 +1,21 @@
+default_to_none = true
+id = "AgrayaNa~hOmaH~draviDadeshe~3"
+tags = [ "SpecialPuja",]
+references_secondary = [ "Vaidikasri Nov 2017",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "puurvaviddha"
+month_number = 8
+anga_type = "tithi"
+anga_number = 15
+kaala = "सूर्योदयः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Perform `hOma` with fresh rice from paddy."
+
+[names]
+sa = [ "आग्रयण-होमः द्राविडेषु",]

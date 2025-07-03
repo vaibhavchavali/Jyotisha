@@ -1,0 +1,23 @@
+default_to_none = true
+id = "anadhyAyaH~pUrvarAtrau"
+shlokas = """
+हारीतः—
+श्वोऽनध्यायेऽद्य शर्वर्यां नाधीयीत कदाचन॥
+कालादर्शे—
+यदा भवेदनध्यायतिथिरुत्तरभागिनी।
+तदा पूर्वतिथौ रात्रौ नाधीयीतेति निश्चयः॥
+"""
+references_primary = ["Smriti Muktaphalam SVR p.  148"]
+tags = ["Anadhyayana Days"]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "When the next day is `anadhyayana`, for whatever reason, one must not perform `adhyayana` in the previous night."
+
+[names]
+sa = ["अनध्यायः"]
+

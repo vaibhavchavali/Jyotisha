@@ -1,0 +1,15 @@
+default_to_none = true
+id = "rAmalakSmaNa-dvAdazI"
+tags = [ "LessCommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 3
+anga_type = "tithi"
+anga_number = 12
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "रामलक्ष्मण-द्वादशी",]

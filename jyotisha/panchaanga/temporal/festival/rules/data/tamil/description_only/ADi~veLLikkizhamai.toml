@@ -1,0 +1,14 @@
+default_to_none = true
+id = "ADi~veLLikkizhamai"
+tags = [ "MonthWeekdayFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Very widely celebrated in Tamil Nadu temples, Fridays in the month of `ADi` are special for propitiating Shakti Devi."
+
+[names]
+ta = [ "ADi~veLLikkizhamai",]

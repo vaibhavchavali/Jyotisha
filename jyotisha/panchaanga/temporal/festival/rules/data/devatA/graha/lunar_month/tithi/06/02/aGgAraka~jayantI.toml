@@ -1,0 +1,15 @@
+default_to_none = true
+id = "aGgAraka~jayantI"
+tags = [ "OtherJayantis",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+anga_type = "tithi"
+anga_number = 2
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "अङ्गारक-जयन्ती",]

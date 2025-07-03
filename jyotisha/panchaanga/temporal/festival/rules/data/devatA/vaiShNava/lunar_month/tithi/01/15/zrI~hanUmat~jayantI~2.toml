@@ -1,0 +1,27 @@
+default_to_none = true
+id = "zrI~hanUmat~jayantI~2"
+tags = [ "LessCommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """
+चैत्रे मासि सिते पक्षे पौर्णमास्यां कुजेऽहनि।
+मौंजीमेखलया युक्तः कौपीनपरिधारकः॥ 
+कैकेयीहस्ततः पिण्डं जहार चिल्हिपक्षिणी।
+गच्छन्त्याकाशमार्गेण तदा वायुर्महानभूत्॥
+तुण्डात् प्रगलिते पिण्डे वायुर्नीत्वाञ्जनाञ्जलौ।
+क्षिप्तवान् स्थापितं पिण्डं भक्षयामास तत्क्षणात्॥
+नवमासगते पुत्रं सुषुवे साऽञ्जना शुभम्। (हनुमदुपासनाकल्पद्रुम)
+"""
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 1
+anga_type = "tithi"
+anga_number = 15
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Hanuman born from Kaikeyi part of Payasam taken by Vulture and eaten by Anjana Devi"
+
+[names]
+sa = [ "श्री-हनूमत्-जयन्ती",]

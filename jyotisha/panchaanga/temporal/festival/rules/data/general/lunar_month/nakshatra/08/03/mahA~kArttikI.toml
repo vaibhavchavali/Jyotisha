@@ -1,0 +1,17 @@
+default_to_none = true
+id = "mahA~kArttikI"
+tags = [ "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+priority = "puurvaviddha"
+month_number = 8
+anga_type = "nakshatra"
+anga_number = 3
+kaala = "प्रदोषः"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "महा-कार्त्तिकी",]

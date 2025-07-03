@@ -1,0 +1,31 @@
+default_to_none = true
+id = "anadhyAyaH~23"
+shlokas = """
+हारीतः—
+प्रतिपत्सु चतुर्दश्यामष्टम्यां पर्वणोर्द्वयोः।
+श्वोऽनध्यायेऽद्य शर्वर्यां नाधीयीत कदाचन॥
+मनुः—
+अमावास्या गुरुं हन्ति शिष्यं हन्ति चतुर्दशी।
+ब्रह्माष्टकापौर्णमास्यस्तस्मात्ताः परिवर्जयेदिति॥
+याज्ञवल्क्यः—
+पञ्चदश्यां चतुर्दश्यां अष्टम्यां राहुसूतके।
+"""
+references_primary = [ "Smriti Muktaphalam SVR p.  148",]
+tags = [ "Anadhyayana Days",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 0
+anga_type = "tithi"
+anga_number = 23
+kaala = "साङ्गवः"
+priority = "paraviddha"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Anadhyayana on account of `aSTamI`. Several tithis in a month are `nitya-anadhyayana` days, including `prathamA`, `aSTamI`, `caturdazI`, `amAvAsyA` and `pUrNimA`. Manu has said that performing adhyayana on these days destroys the Guru (Amavasya), Shishya (Chaturdashi) and the `vIrya` of the `brahma` (`vEda`) itself (Ashtami/Purnima). Similarly, Jabali Rishi has said that Adhyayana on `prathama` hurts the `buddhi` while `adhyayana` on `caturdazI` hurts the `brahma` (`vEda`) itself!"
+
+[names]
+sa = [ "अनध्यायः",]

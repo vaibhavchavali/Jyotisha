@@ -1,0 +1,22 @@
+default_to_none = true
+id = "mArgazIrSa-zivaliGga-SaSThI"
+tags = [ "SpecialPuja",]
+shlokas = """
+मार्गशीर्षेऽमले पक्षे षष्ठ्यां वारेंऽशुमालिनः।
+शततारागते चन्द्रे लिङ्गं स्याद्दृष्टिगोचरम्।
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 9
+anga_type = "tithi"
+anga_number = 6
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Have darshan of Shivalingam today; removes Shivapachara doshas in the family."
+
+[names]
+sa = [ "मार्गशीर्ष-शिवलिङ्ग-षष्ठी",]

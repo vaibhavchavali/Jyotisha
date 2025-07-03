@@ -1,0 +1,14 @@
+default_to_none = true
+id = "adhika-caitra-amAvAsyA"
+tags = [ "AmavasyaDays",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "`amAvAsyA` of `adhika caitra` month."
+
+[names]
+sa = [ "चैत्र-(अधिक)-अमावास्या",]

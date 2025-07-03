@@ -1,0 +1,23 @@
+default_to_none = true
+id = "tiruvADippUram"
+tags = [ "CommonFestivals", "AzhwarJayanti",]
+shlokas = """
+श्रीविष्णुचित्त-कुलकल्पकनन्दवल्लीम्
+श्रीरङ्गराज-हरि-चन्दन-योग-दृश्याम्।
+साक्षात् क्षमां करुणया कमलामिवान्यां
+गोदाम् अनन्यशरणः शरणं प्रपद्ये॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 4
+anga_type = "nakshatra"
+anga_number = 11
+kaala = "प्रातः"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+ta = [ "tiruvADippUram",]

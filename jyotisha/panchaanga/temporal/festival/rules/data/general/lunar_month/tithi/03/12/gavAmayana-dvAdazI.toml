@@ -1,0 +1,24 @@
+default_to_none = true
+id = "gavAmayana-dvAdazI"
+tags = [ "LessCommonFestivals",]
+shlokas = """
+अहोरात्रेण द्वादश्यां ज्येष्ठे मासि त्रिविक्रमम्।
+गवामयनमाप्नोति अप्सरोभिश्च मोदते॥
+"""
+references_primary = [ "Mahabharata",]
+references_secondary = [ "Smriti Kaustubha p.123",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 3
+anga_type = "tithi"
+anga_number = 12
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Perform puja of Bhagavan Trivikrama (Sahasranamarchana), do naivedyam of mangoes and offer annadanam to needy."
+
+[names]
+sa = [ "गवामयन-द्वादशी",]

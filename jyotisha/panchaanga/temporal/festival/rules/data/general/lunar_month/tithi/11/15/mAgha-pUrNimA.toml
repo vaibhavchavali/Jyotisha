@@ -1,0 +1,20 @@
+default_to_none = true
+id = "mAgha-pUrNimA"
+tags = [ "PurnimaDays", "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+references_secondary = [ "Vrata Nirnaya Kalpavalli",]
+shlokas = """
+निर्णयसिन्धौ भविष्ये---
+माघमासे शुक्लपक्षे पूर्णिमायां नृपोत्तम।
+तिलपात्रादि देयानि कञ्चुका कम्बलास्तथा॥"""
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 11
+anga_type = "tithi"
+anga_number = 15
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "माघ-पूर्णिमा",]

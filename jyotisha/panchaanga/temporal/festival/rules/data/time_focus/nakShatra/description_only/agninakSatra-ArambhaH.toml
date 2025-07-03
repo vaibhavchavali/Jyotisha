@@ -1,0 +1,14 @@
+default_to_none = true
+id = "agninakSatra-ArambhaH"
+tags = [ "SpecialPeriodStart",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "The start of the period `agninakSatram`, the transit of the Sun through `kRttikA` asterism."
+
+[names]
+sa = [ "अग्निनक्षत्र-आरम्भः",]

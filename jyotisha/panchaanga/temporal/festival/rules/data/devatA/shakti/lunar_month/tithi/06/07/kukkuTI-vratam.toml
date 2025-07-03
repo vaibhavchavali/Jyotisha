@@ -1,0 +1,18 @@
+default_to_none = true
+id = "kukkuTI-vratam"
+tags = [ "SpecialVratam",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+anga_type = "tithi"
+anga_number = 7
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Shiva Puja"
+
+[names]
+sa = [ "कुक्कुटी-व्रतम्",]

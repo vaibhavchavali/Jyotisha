@@ -1,0 +1,32 @@
+default_to_none = true
+id = "balarAma~jayantI"
+tags = [ "Dashavataram", "LessCommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+shlokas = """
+वैशाख शुक्लपक्षे तृतीयायां हलायुधः।
+सङ्कर्षणो बलो जज्ञे रामः कृष्णाग्रजो हरिः॥
+अवतारदिने पुण्ये हरिमुद्दिश्य भक्तितः।
+उपवासादि यत् किञ्चित्तदानन्त्याय कल्पते॥
+व्रतनिर्णयकल्पवल्ली---
+इयमेव बलरामजयन्ती। सा मध्याह्नव्यापिनी ग्राह्या। तथा चोक्तं स्कान्दे---
+वैशाखे शुक्लपक्षे तु तृतीयायां गुरौ तथा।
+रोहिण्यां कर्कटे लग्ने बलरामो भवेद्धरिः॥ इति।
+"""
+references_primary = [ "Vaidyanatha Dikshitiyam (SVR) p.62",]
+references_secondary = [ "VrataNirnayaKalpavalli",]
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 2
+anga_type = "tithi"
+anga_number = 3
+kaala = "मध्याह्नः"
+priority = "paraviddha"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Jayanti of Balarama."
+
+[names]
+sa = [ "बलराम-जयन्ती",]

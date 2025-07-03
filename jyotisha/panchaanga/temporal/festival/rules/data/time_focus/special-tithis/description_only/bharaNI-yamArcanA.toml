@@ -1,0 +1,22 @@
+default_to_none = true
+id = "bharaNI-yamArcanA"
+tags = [ "RareDays", "Combinations",]
+shlokas = """
+भरण्यां तु चतुर्थ्यां तु शनैश्चरदिने यमम्।
+पूजयन् सप्तजन्मोत्थैर्मुच्यते पातकैर्नरः॥ (कूर्मपुराणम्, हेमाद्रौ)
+
+चतुर्थी भरणीयोगः शनैश्चरदिने यदि।
+तदाऽभ्यर्च्य यमं देवं मुच्यते सर्वकिल्बिषैः॥
+"""
+references_primary = [ "Purushartha Chintamani p.62",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Bharani Nakshatram & Chaturthi tithi falling on a Saturday."
+
+[names]
+sa = [ "भरणी-यमार्चना",]

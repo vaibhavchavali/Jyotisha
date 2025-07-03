@@ -1,0 +1,23 @@
+default_to_none = true
+id = "zrI~zESAdri-svAmI~jayantI"
+tags = [ "MahapurushaEvents",]
+shlokas = """
+करुणासागरं शान्तम् अरुणाचलवासिनम्।
+श्रीशेषाद्रिगुरुं वन्दे ब्रह्मीभूतं तपोनिधिम्॥
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "sidereal_solar_month"
+priority = "paraviddha"
+month_number = 10
+anga_type = "nakshatra"
+anga_number = 13
+kaala = "प्रातः"
+year_start = 4970
+year_start_era = "kali"
+jsonClass = "HinduCalendarEventTiming"
+
+[names]
+sa = [ "श्री-शेषाद्रि-स्वामि-जयन्ती",]

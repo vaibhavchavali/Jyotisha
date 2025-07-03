@@ -1,0 +1,18 @@
+default_to_none = true
+id = "Ayudha~pUjA"
+tags = [ "CommonFestivals",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+anchor_festival_id = "zarannavarAtra-ArambhaH"
+offset = 8
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Worship of all weapons, or rather, tools related to one's profession."
+sa = "परेद्युर् विजयदशम्यां सशस्त्रैः प्रक्रमिष्यते। ततः प्राग् अद्यायुधपूजा।"
+
+[names]
+ta = [ "Ayudha~pUjai",]
+sa = [ "आयुध-पूजा",]

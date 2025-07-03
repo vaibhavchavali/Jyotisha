@@ -1,0 +1,20 @@
+default_to_none = true
+id = "ananta-caturdazI"
+tags = [ "CommonFestivals", "SpecialPuja",]
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 6
+anga_type = "tithi"
+anga_number = 14
+kaala = "चैत्रः" # Second Muhurta of the day
+priority = "puurvaviddha"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Visarjan of Ganesha idols"
+
+[names]
+sa = [ "अनन्त-चतुर्दशी",]

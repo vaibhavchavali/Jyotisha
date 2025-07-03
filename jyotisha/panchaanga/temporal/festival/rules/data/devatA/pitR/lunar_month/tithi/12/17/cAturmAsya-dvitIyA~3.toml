@@ -1,0 +1,34 @@
+default_to_none = true
+id = "cAturmAsya-dvitIyA~3"
+tags = [ "LessCommonFestivals",]
+references_secondary = [ "Smriti Muktaphalam SVR (p. 163)",]
+shlokas = """
+कार्तिककृष्णद्वितीया चातुर्मास्यद्वितीया। अस्या निर्णयस्तु आषाढकृष्ण-
+द्वितीयाप्रकरणे विशेषेणोक्तः। एषा अपराह्णव्यापिनी ग्राह्या। श्राद्धदिनत्वात्।
+व्रतनिर्णयकल्पवल्ल्याम्---
+उक्तञ्च वृद्धगार्ग्येण---
+शुचावूर्जे तपस्ये च या द्वितीया विधुक्षये।
+चातुर्मास्यद्वितीयास्ताः प्रवदन्ति महर्षयः॥ इति।
+(स्मृतिमुक्तफले) हारीतः---
+चातुर्मास्यद्वितीयासु वेदाध्यायं विवर्जयेत्॥
+गौतमोऽपि---
+कार्तिकी फाल्गुन्याषाढी पौर्णमासीति तिस्रोऽष्टकास्त्रिरात्रमिति॥
+उक्तपौर्णमासीरारभ्य त्रिरात्रम्।
+"""
+jsonClass = "HinduCalendarEvent"
+
+[timing]
+default_to_none = true
+month_type = "lunar_month"
+month_number = 12
+anga_type = "tithi"
+anga_number = 17
+priority = "vyaapti"
+kaala = "अपराह्णः"
+jsonClass = "HinduCalendarEventTiming"
+
+[description]
+en = "Three `dvitIyA` tithis, in `ASADha`, `kArttika` and `phAlguna` are known as `cAturmAsya-dvitIyA`. These are `anadhyayana` days."
+
+[names]
+sa = [ "चातुर्मास्य-द्वितीया",]
