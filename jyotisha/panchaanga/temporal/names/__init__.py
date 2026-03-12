@@ -143,6 +143,7 @@ python_to_devanaagarii = {
   "naabhasvata" : "नाभस्वतः",  
   "durmuhurta1" : "दुर्मुहूर्तः १",  
   "durmuhurta2" : "दुर्मुहूर्तः २",  
+  "abhijit_muhurta" : "अभिजित् मुहूर्तम्",  
 } 
 
 devanaagarii_to_python = {python_to_devanaagarii[x]: x for x in python_to_devanaagarii }

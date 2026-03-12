@@ -344,3 +344,41 @@ def get_tithi_data_str(daily_panchaanga, scripts, time_format, previous_day_panc
 
 
   return tithi_data_str
+
+
+def get_abhijit_muhurta_string(daily_panchaanga, time_format):
+  """Returns a formatted string for Abhijit Muhurtam time range."""
+  jd = daily_panchaanga.julian_day_start
+  abhijit = daily_panchaanga.day_length_based_periods.fifteen_fold_division.abhijit_muhurta
+  start = time.Hour(24 * (abhijit.jd_start - jd)).to_string(format=time_format)
+  end = time.Hour(24 * (abhijit.jd_end - jd)).to_string(format=time_format)
+  return '%s--%s' % (start, end)
+
+
+def get_varjyam_strings(panchaanga, day_index, time_format):
+  """Returns formatted Varjyam (Tyajyam/Vishagati) time strings for a given day."""
+  if not hasattr(panchaanga, 'tyajyam_data') or panchaanga.tyajyam_data is None:
+    return ''
+  daily_panchaanga = panchaanga.daily_panchaangas_sorted()[day_index]
+  jd = daily_panchaanga.julian_day_start
+  varjyam_strs = []
+  tyajyam_entry = panchaanga.tyajyam_data[day_index]
+  for start_jd, end_jd in tyajyam_entry.get('NAKSHATRAM', []):
+    start = time.Hour(24 * (start_jd - jd)).to_string(format=time_format)
+    end = time.Hour(24 * (end_jd - jd)).to_string(format=time_format)
+    varjyam_strs.append('%s--%s' % (start, end))
+  return ', '.join(varjyam_strs) if varjyam_strs else '---'
+
+
+def get_amrita_kalam_strings(panchaanga, day_index, time_format):
+  """Returns formatted Amrita Kalam time strings for a given day."""
+  if not hasattr(panchaanga, 'amrita_data') or panchaanga.amrita_data is None:
+    return ''
+  daily_panchaanga = panchaanga.daily_panchaangas_sorted()[day_index]
+  jd = daily_panchaanga.julian_day_start
+  amrita_strs = []
+  for start_jd, end_jd in panchaanga.amrita_data[day_index]:
+    start = time.Hour(24 * (start_jd - jd)).to_string(format=time_format)
+    end = time.Hour(24 * (end_jd - jd)).to_string(format=time_format)
+    amrita_strs.append('%s--%s' % (start, end))
+  return ', '.join(amrita_strs) if amrita_strs else '---'
