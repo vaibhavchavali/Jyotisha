@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DINA MUHURTAM (దిన ఫలాలు)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-card: #1a1a2e;
+      --bg-input: #16213e;
+      --accent-gold: #f0c040;
+      --accent-teal: #00d2ff;
+      --accent-orange: #ff6b35;
+      --accent-green: #00e676;
+      --accent-red: #ff5252;
+      --text-primary: #e8e8f0;
+      --text-secondary: #a0a0b8;
+      --border: #2a2a4a;
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0 3rem;
+    }
+
+    header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+
+    header .subtitle {
+      font-size: 1.5rem;
+      color: var(--accent-gold);
+      opacity: 0.8;
+      font-weight: 300;
+    }
+
+    header .divider {
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      margin: 1rem auto;
+    }
+
+    .tab-container {
+      display: flex;
+      gap: 0;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 1rem;
+      background: var(--bg-card);
+      border: none;
+      color: var(--text-secondary);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(240, 192, 64, 0.15), rgba(255, 107, 53, 0.1));
+      color: var(--accent-gold);
+    }
+
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-orange));
+    }
+
+    .tab-btn:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-primary);
+    }
+
+    .calculator-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .calculator-card.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--accent-teal);
+    }
+
+    .card-desc {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0a0b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 0 3px rgba(240, 192, 64, 0.1);
+    }
+
+    .form-group select option {
+      background: var(--bg-input);
+      color: var(--text-primary);
+    }
+
+    .calc-btn {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+      border: none;
+      border-radius: 10px;
+      color: #0f0f1a;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .calc-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(240, 192, 64, 0.3);
+    }
+
+    .calc-btn:active { transform: translateY(0); }
+
+    .result-box {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .result-box.good {
+      background: linear-gradient(135deg, rgba(0, 230, 118, 0.1), rgba(0, 210, 255, 0.05));
+      border: 1px solid rgba(0, 230, 118, 0.3);
+    }
+
+    .result-box.bad {
+      background: linear-gradient(135deg, rgba(255, 82, 82, 0.1), rgba(255, 107, 53, 0.05));
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+
+    .result-box.neutral {
+      background: linear-gradient(135deg, rgba(240, 192, 64, 0.1), rgba(255, 255, 255, 0.02));
+      border: 1px solid rgba(240, 192, 64, 0.3);
+    }
+
+    .result-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .result-box.good .result-title { color: var(--accent-green); }
+    .result-box.bad .result-title { color: var(--accent-red); }
+    .result-box.neutral .result-title { color: var(--accent-gold); }
+
+    .result-detail {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .result-detail strong {
+      color: var(--text-primary);
+    }
+
+    .result-emoji {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .info-row:last-child { border-bottom: none; }
+
+    .info-label { color: var(--text-secondary); }
+    .info-value { color: var(--text-primary); font-weight: 500; }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0 1rem;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      header .subtitle { font-size: 1.1rem; }
+      .calculator-card { padding: 1.5rem; }
+      .tab-btn { font-size: 0.95rem; padding: 0.8rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DINA MUHURTAM</h1>
+      <div class="subtitle">దిన ఫలాలు</div>
+      <div class="divider"></div>
+    </header>
+
+    <div class="tab-container">
+      <button class="tab-btn active" onclick="switchTab('tara')" id="tab-tara">⭐ Tara Balam</button>
+      <button class="tab-btn" onclick="switchTab('chandra')" id="tab-chandra">🌙 Chandra Balam</button>
+    </div>
+
+    <!-- Tara Balam Calculator -->
+    <div class="calculator-card active" id="calc-tara">
+      <div class="card-title">⭐ Tara Balam Calculator</div>
+      <div class="card-desc">
+        Calculate the auspiciousness based on your birth Nakshatra (Janma Nakshatra) and the day's prevailing Nakshatra.
+        Count forward from Janma Nakshatra to day's Nakshatra, divide by 9 — the remainder determines the Tara.
+      </div>
+
+      <div class="form-group">
+        <label for="janma-nakshatra">Your Janma Nakshatra (జన్మ నక్షత్రం)</label>
+        <select id="janma-nakshatra"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="day-nakshatra">Today's Nakshatra (నేటి నక్షత్రం)</label>
+        <select id="day-nakshatra"></select>
+      </div>
+
+      <button class="calc-btn" onclick="calculateTaraBalam()">Calculate Tara Balam</button>
+
+      <div class="result-box" id="tara-result"></div>
+    </div>
+
+    <!-- Chandra Balam Calculator -->
+    <div class="calculator-card" id="calc-chandra">
+      <div class="card-title">🌙 Chandra Balam Calculator</div>
+      <div class="card-desc">
+        Calculate the strength of Moon transits based on your birth Rashi (Janma Rashi) and the day's Moon Rashi.
+        Count from Janma Rashi to Moon Rashi — certain positions are auspicious while others should be avoided.
+      </div>
+
+      <div class="form-group">
+        <label for="janma-rashi">Your Janma Rashi (జన్మ రాశి)</label>
+        <select id="janma-rashi"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="day-rashi">Today's Moon Rashi (చంద్ర రాశి)</label>
+        <select id="day-rashi"></select>
+      </div>
+
+      <button class="calc-btn" onclick="calculateChandraBalam()">Calculate Chandra Balam</button>
+
+      <div class="result-box" id="chandra-result"></div>
+    </div>
+
+    <footer>
+      Panchanga Calculator &bull; Based on Traditional Jyotisha Methods
+    </footer>
+  </div>
+
+  <script>
+    const NAKSHATRAS = [
+      "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira",
+      "Ardra", "Punarvasu", "Pushya", "Ashlesha", "Magha",
+      "Purva Phalguni", "Uttara Phalguni", "Hasta", "Chitra",
+      "Swati", "Vishakha", "Anuradha", "Jyeshtha", "Mula",
+      "Purva Ashadha", "Uttara Ashadha", "Shravana", "Dhanishtha",
+      "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada", "Revati"
+    ];
+
+    const RASHIS = [
+      "Mesham (మేషం)", "Vrishabham (వృషభం)", "Mithunam (మిథునం)",
+      "Karkatakam (కర్కాటకం)", "Simham (సింహం)", "Kanya (కన్య)",
+      "Tula (తుల)", "Vrischikam (వృశ్చికం)", "Dhanussu (ధనుస్సు)",
+      "Makaram (మకరం)", "Kumbham (కుంభం)", "Meenam (మీనం)"
+    ];
+
+    const TARA_DATA = [
+      { name: "Janma Tārā (జన్మ తార)", nature: "bad", emoji: "⚠️",
+        desc: "Not good — gives fear & health problems. Avoid starting new ventures." },
+      { name: "Sampat Tārā (సంపత్ తార)", nature: "good", emoji: "💰",
+        desc: "Very good — brings wealth & progress. Excellent for financial matters." },
+      { name: "Vipat Tārā (విపత్ తార)", nature: "bad", emoji: "🚫",
+        desc: "Inauspicious — danger & loss. Avoid important decisions." },
+      { name: "Kṣema Tārā (క్షేమ తార)", nature: "good", emoji: "😊",
+        desc: "Auspicious — comfort & happiness. Good for personal endeavors." },
+      { name: "Pratyak Tārā (ప్రత్యక్ తార)", nature: "bad", emoji: "⛔",
+        desc: "Inauspicious — obstacles & enemies. Exercise caution." },
+      { name: "Sādhana Tārā (సాధన తార)", nature: "good", emoji: "✅",
+        desc: "Auspicious — success in efforts. Good for starting work." },
+      { name: "Naidhana Tārā (నైధన తార)", nature: "bad", emoji: "💀",
+        desc: "Very bad — danger, disease. Strongly avoid important tasks." },
+      { name: "Mitra Tārā (మిత్ర తార)", nature: "good", emoji: "🤝",
+        desc: "Good — help from friends. Favorable for social activities." },
+      { name: "Param Mitra Tārā (పరమ మిత్ర తార)", nature: "good", emoji: "🌟",
+        desc: "Excellent — all-round success! Best Tara for any activity." }
+    ];
+
+    // Chandra Balam: positions from Janma Rashi
+    // 1=Janma (neutral), 2=good, 3=good, 4=neutral, 5=bad, 6=good, 7=bad, 8=bad, 9=good, 10=bad, 11=good, 12=neutral
+    const CHANDRA_BALAM_DATA = [
+      { position: 1, name: "Janma Rashi (జన్మ రాశి)", nature: "neutral", emoji: "🔸",
+        desc: "Moon in Janma Rashi — mixed results. Some mental tension possible, but generally neutral." },
+      { position: 2, name: "Dhana Sthāna (ధన స్థానం)", nature: "good", emoji: "💰",
+        desc: "Moon in 2nd from Janma — financial gains, good speech, family harmony." },
+      { position: 3, name: "Sahaja Sthāna (సహజ స్థానం)", nature: "good", emoji: "💪",
+        desc: "Moon in 3rd from Janma — courage, success through efforts, good for travel." },
+      { position: 4, name: "Sukha Sthāna (సుఖ స్థానం)", nature: "neutral", emoji: "🔸",
+        desc: "Moon in 4th from Janma — mixed, some domestic issues possible. Use caution at home." },
+      { position: 5, name: "Putra Sthāna (పుత్ర స్థానం)", nature: "bad", emoji: "⚠️",
+        desc: "Moon in 5th from Janma — unfavorable. Mental anxiety, obstacles in work." },
+      { position: 6, name: "Ripu Sthāna (రిపు స్థానం)", nature: "good", emoji: "🏆",
+        desc: "Moon in 6th from Janma — victory over enemies, good health, success in competitions." },
+      { position: 7, name: "Kalatra Sthāna (కళత్ర స్థానం)", nature: "good", emoji: "😊",
+        desc: "Moon in 7th from Janma — good relationships, pleasant experiences, social gains." },
+      { position: 8, name: "Ashtama Sthāna (అష్టమ స్థానం)", nature: "bad", emoji: "🚫",
+        desc: "Moon in 8th from Janma — very unfavorable. Health issues, unexpected problems. Chandrashtama." },
+      { position: 9, name: "Bhāgya Sthāna (భాగ్య స్థానం)", nature: "good", emoji: "🌟",
+        desc: "Moon in 9th from Janma — excellent! Luck, fortune, religious activities favored." },
+      { position: 10, name: "Karma Sthāna (కర్మ స్థానం)", nature: "good", emoji: "✅",
+        desc: "Moon in 10th from Janma — professional success, public recognition, good for career." },
+      { position: 11, name: "Lābha Sthāna (లాభ స్థానం)", nature: "good", emoji: "🎯",
+        desc: "Moon in 11th from Janma — gains, wish fulfillment, profits in business." },
+      { position: 12, name: "Vyaya Sthāna (వ్యయ స్థానం)", nature: "bad", emoji: "💸",
+        desc: "Moon in 12th from Janma — expenditure, losses, travel expenses. Exercise financial caution." }
+    ];
+
+    // Populate dropdowns
+    function populateDropdowns() {
+      const jn = document.getElementById('janma-nakshatra');
+      const dn = document.getElementById('day-nakshatra');
+      const jr = document.getElementById('janma-rashi');
+      const dr = document.getElementById('day-rashi');
+
+      NAKSHATRAS.forEach((n, i) => {
+        jn.innerHTML += `<option value="${i+1}">${i+1}. ${n}</option>`;
+        dn.innerHTML += `<option value="${i+1}">${i+1}. ${n}</option>`;
+      });
+
+      RASHIS.forEach((r, i) => {
+        jr.innerHTML += `<option value="${i+1}">${i+1}. ${r}</option>`;
+        dr.innerHTML += `<option value="${i+1}">${i+1}. ${r}</option>`;
+      });
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.calculator-card').forEach(c => c.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      document.getElementById('calc-' + tab).classList.add('active');
+    }
+
+    function calculateTaraBalam() {
+      const janma = parseInt(document.getElementById('janma-nakshatra').value);
+      const day = parseInt(document.getElementById('day-nakshatra').value);
+
+      // Count forward from janma to day (inclusive)
+      let count = day - janma + 1;
+      if (count <= 0) count += 27;
+
+      // Remainder when divided by 9 (1-indexed)
+      let remainder = count % 9;
+      if (remainder === 0) remainder = 9;
+
+      const tara = TARA_DATA[remainder - 1];
+      const resultBox = document.getElementById('tara-result');
+
+      resultBox.className = 'result-box ' + (tara.nature === 'good' ? 'good' : tara.nature === 'bad' ? 'bad' : 'neutral');
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `
+        <div class="result-emoji">${tara.emoji}</div>
+        <div class="result-title">${tara.name}</div>
+        <div class="result-detail">
+          <div class="info-row">
+            <span class="info-label">Your Nakshatra</span>
+            <span class="info-value">${NAKSHATRAS[janma-1]} (${janma})</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Day's Nakshatra</span>
+            <span class="info-value">${NAKSHATRAS[day-1]} (${day})</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Count</span>
+            <span class="info-value">${count}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Remainder (÷9)</span>
+            <span class="info-value">${remainder}</span>
+          </div>
+          <br>
+          <strong>Result:</strong> ${tara.desc}
+        </div>
+      `;
+    }
+
+    function calculateChandraBalam() {
+      const janma = parseInt(document.getElementById('janma-rashi').value);
+      const day = parseInt(document.getElementById('day-rashi').value);
+
+      // Position of Moon from Janma Rashi
+      let position = day - janma + 1;
+      if (position <= 0) position += 12;
+
+      const balam = CHANDRA_BALAM_DATA[position - 1];
+      const resultBox = document.getElementById('chandra-result');
+
+      resultBox.className = 'result-box ' + (balam.nature === 'good' ? 'good' : balam.nature === 'bad' ? 'bad' : 'neutral');
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `
+        <div class="result-emoji">${balam.emoji}</div>
+        <div class="result-title">${balam.name}</div>
+        <div class="result-detail">
+          <div class="info-row">
+            <span class="info-label">Your Janma Rashi</span>
+            <span class="info-value">${RASHIS[janma-1]}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Moon Rashi Today</span>
+            <span class="info-value">${RASHIS[day-1]}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Position from Janma</span>
+            <span class="info-value">${position}th house</span>
+          </div>
+          <br>
+          <strong>Result:</strong> ${balam.desc}
+        </div>
+      `;
+    }
+
+    // Initialize
+    populateDropdowns();
+  </script>
+</body>
+</html>

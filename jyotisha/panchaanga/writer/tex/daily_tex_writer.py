@@ -21,8 +21,7 @@ from jyotisha.panchaanga.spatio_temporal import City
 from jyotisha.panchaanga.temporal import time
 from jyotisha.panchaanga.temporal.festival import rules
 from jyotisha.panchaanga.temporal.time import Timezone
-from jyotisha.panchaanga.writer.tex.day_details import get_lagna_data_str, get_raahu_yama_gulika_strings, \
-  get_karaNa_data_str, get_yoga_data_str, get_raashi_data_str, get_nakshatra_data_str, get_tithi_data_str
+from jyotisha.panchaanga.writer.tex.day_details import get_raahu_yama_gulika_strings, get_karaNa_data_str, get_yoga_data_str, get_raashi_data_str, get_nakshatra_data_str, get_tithi_data_str, get_lagna_data_str, get_hora_data_str, get_solar_shraaddha_tithi_data_str, get_lunar_shraaddha_tithi_data_str, get_abhijit_muhurta_string, get_varjyam_strings, get_amrita_kalam_strings
 
 logging.basicConfig(
   level=logging.DEBUG,
@@ -32,7 +31,7 @@ logging.basicConfig(
 CODE_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 
-def emit(panchaanga, time_format="hh:mm", languages=None, scripts=None, output_stream=None):
+def emit(panchaanga, time_format="hh:mm:a", languages=None, scripts=None, output_stream=None):
   """Write out the panchaanga TeX using a specified template
   """
   # day_colours = {0: 'blue', 1: 'blue', 2: 'blue',
@@ -90,6 +89,10 @@ def emit(panchaanga, time_format="hh:mm", languages=None, scripts=None, output_s
 
     gulika, rahu, yama, raatri_gulika, raatri_yama, durmuhurta1, durmuhurta2 = get_raahu_yama_gulika_strings(daily_panchaanga, time_format)
 
+    abhijit_str = get_abhijit_muhurta_string(daily_panchaanga, time_format)
+    varjyam_str = get_varjyam_strings(panchaanga, d, time_format)
+    amrita_str = get_amrita_kalam_strings(panchaanga, d, time_format)
+
     if daily_panchaanga.solar_sidereal_date_sunset.month == 1:
       # Flip the year name for the remaining days
       yname = samvatsara_names[1]
@@ -133,7 +136,10 @@ def emit(panchaanga, time_format="hh:mm", languages=None, scripts=None, output_s
     print_festivals_to_stream(daily_panchaanga, output_stream, panchaanga, languages, scripts)
 
     print('{%s} ' % names.weekday_short_map[daily_panchaanga.date.get_weekday()], file=output_stream)
-    print('\\cfoot{\\rygdata{%s}{%s}{%s}}' % (rahu, yama, gulika), file=output_stream)
+    durmuhurta_str = durmuhurta1
+    if durmuhurta2 is not None:
+      durmuhurta_str += ', ' + durmuhurta2
+    print('\\cfoot{\\rygdata{%s}{%s}{%s}{%s}{%s}{%s}{%s}}' % (rahu, yama, gulika, durmuhurta_str, abhijit_str, varjyam_str, amrita_str), file=output_stream)
 
     if m == 12 and dt == 31:
       break

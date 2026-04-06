@@ -63,6 +63,25 @@ class Hour(JsonObject):
     if format in ('hh:mm', 'hh:mm*', 'hh:mm!', 'hh:mm+'):
       # Rounding done if 30 seconds have elapsed
       return '%02d:%02d%s' % (hour, minute + ((secs + (msec >= 500)) >= 30) * rounding, suffix)
+    elif format == 'hh:mm:a':
+      # 12-hour format with AM/PM
+      next_day = ''
+      display_hour = hour
+      if display_hour >= 24:
+        display_hour -= 24
+        next_day = '(+1)'
+      if display_hour == 0:
+        ampm = 'AM'
+        display_hour = 12
+      elif display_hour < 12:
+        ampm = 'AM'
+      elif display_hour == 12:
+        ampm = 'PM'
+      else:
+        ampm = 'PM'
+        display_hour -= 12
+      rounded_minute = int(minute + ((secs + (msec >= 500)) >= 30) * rounding)
+      return '%d:%02d %s%s' % (display_hour, rounded_minute, ampm, next_day)
     elif format in ('hh:mm:ss', 'hh:mm:ss*'):
       # Rounding done if 500 milliseconds have elapsed
       return '%02d:%02d:%02d%s' % (hour, minute, second + (msec >= 500) * rounding, suffix)

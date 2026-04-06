@@ -209,8 +209,10 @@ class FifteenFoldDivision(common.JsonObject):
     self.succeeding_braahma = get_interval(start_jd=jd_sunset, end_jd=jd_next_sunrise, part_index=13, num_parts=15)
     self.naabhasvata = get_interval(start_jd=jd_sunset, end_jd=jd_next_sunrise, part_index=14, num_parts=15)
 
-    DURMUHURTA1 = (13, 8, 3, 7, 5, 3, 1)
-    DURMUHURTA2 = (None, 11, 21, None, 11, 8, 2)
+    # Traditional Durmuhurta rule (0-indexed muhurtas within 15-fold day division):
+    # Sun: 4&5, Mon: 2&3, Tue: 7, Wed: 5, Thu: 6&7, Fri: 4, Sat: 1&2
+    DURMUHURTA1 = (3, 1, 6, 4, 5, 3, 0)
+    DURMUHURTA2 = (4, 2, None, None, 6, None, 1)
     self.durmuhurta1 = get_interval(start_jd=jd_sunrise, end_jd=jd_sunset,
                              part_index=DURMUHURTA1[weekday], num_parts=15)
     if DURMUHURTA2[weekday] is None:
@@ -219,6 +221,15 @@ class FifteenFoldDivision(common.JsonObject):
       self.durmuhurta2 = get_interval(start_jd=jd_sunset, end_jd=jd_next_sunrise, part_index=DURMUHURTA2[weekday] - 15, num_parts=15)
     else:
       self.durmuhurta2 = get_interval(start_jd=jd_sunrise, end_jd=jd_sunset, part_index=DURMUHURTA2[weekday], num_parts=15)
+
+    # Abhijit Muhurtam: midday ± half-muhurta
+    day_duration = jd_sunset - jd_sunrise
+    one_muhurta = day_duration / 15
+    jd_midday = jd_sunrise + day_duration / 2
+    self.abhijit_muhurta = Interval(
+      jd_start=jd_midday - one_muhurta / 2,
+      jd_end=jd_midday + one_muhurta / 2,
+      name=None)
 
     self.tb_muhuurtas = None
     self.compute_tb_muhuurtas(jd_sunrise=jd_sunrise, jd_sunset=jd_sunset)
